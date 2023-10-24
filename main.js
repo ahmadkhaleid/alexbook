@@ -37,7 +37,7 @@ function getPosts(empty = true, page = 1 ) {
   }
   
 
-  axios.get(`${baseUrl}/posts?limit=4&page=${page}`)
+  axios.get(`${baseUrl}/posts?limit=80&page=${page}`)
   .then(function (response) {
     let posts = response.data.data
 
